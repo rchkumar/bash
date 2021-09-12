@@ -30,7 +30,7 @@ else
                else
                
                 echo "Strting the httpd"
-                systemctl start httpd
+                systemctl start httpd -y
                 echo "Started the httpd"
                
             fi
