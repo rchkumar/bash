@@ -6,15 +6,15 @@ read -p  " Choose your options 1. Addition 2. Subtraction 3. Multiplication : " 
 case $option in 
 
     1) 
-    echo "You have entered the option 1 so we are doing addition"
+    echo "You have entered the $option so we are doing addition"
     ;;
     
     2)
-    echo "You have entered the option 1 so we are doing subtraction"
+    echo "You have entered the $option so we are doing subtraction"
     ;;
     
     3)
-      echo "You have entered the option 1 so we are doing multiplication"
+      echo "You have entered the $option so we are doing multiplication"
     ;;
     
     *)
