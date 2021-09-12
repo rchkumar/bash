@@ -21,7 +21,7 @@ case $a in
     
        
    * )
-    echo "You have entered the lower case alphabet"
+    echo "You have entered the special charcter"
     ;;
 
 esac
