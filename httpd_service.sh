@@ -1,15 +1,24 @@
 #!/bin/bash
 
-if systemctl status httpd 1>/dev/null 2>/dev/null
+if [[ $(id -u) -eq 0 ]]
 
 then
-
-  echo  "HTTPD service is already running"
-  
+        
+        if systemctl status httpd 1>/dev/null 2>/dev/null
+        
+        then
+        
+          echo  "HTTPD service is already running"
+          
+        else
+           
+           echo "Strting the httpd"
+           systemctl start httpd
+           echo "Started the httpd"
+           
+        fi
 else
-   
-   echo "Strting the httpd"
-   systemctl start httpd
-   echo "Started the httpd"
-   
+
+    echo "Sorry, you dont have privileges to run the docker service as you are not root user"
+    
 fi
