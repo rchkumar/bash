@@ -14,5 +14,14 @@ case $a in
     echo "You have entered the lower case alphabet"
     ;;
     
+       
+   [A-Z] )
+    echo "You have entered the upper case alphabet"
+    ;;
+    
+       
+   * )
+    echo "You have entered the lower case alphabet"
+    ;;
 
 esac
