@@ -11,7 +11,7 @@
 
 # instead of all above method, you can use if condition.
 
-if [ $(id -u) -eq 0 ]]
+if [[ $(id -u) -eq 0 ]]
 then
 
   echo "You are root user" 
