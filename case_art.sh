@@ -1,7 +1,12 @@
 #!/bin/bash
 read -p " Enter your number 1  : "  a
 read -p " Enter your number 2  : "  b
-read -p  " Choose your options 1. Addition 2. Subtraction 3. Multiplication : "  option
+#read -p  " Choose your options 1. Addition 2. Subtraction 3. Multiplication : "  option
+echo " ===== Menu for cal======="
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+read -p " Please select your option from above menu : " option
 
 case $option in 
 
