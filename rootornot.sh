@@ -19,3 +19,5 @@ then
 else
 
 echo "You are not root user"
+
+fi
