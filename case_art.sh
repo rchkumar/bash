@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p " Enter your number 1  : "  a
-read -p " Enter your number 1  : "  b
+read -p " Enter your number 2  : "  b
 read -p  " Choose your options 1. Addition 2. Subtraction 3. Multiplication : "  option
 
 case $option in 
