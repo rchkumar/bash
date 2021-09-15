@@ -13,10 +13,15 @@ echo "already vim installed"
 else
 
 
-echo " Installing VIM"
-yum install vim -y
-
+    echo " Installing VIM"
+    yum install vim -y
+    
+    if [[ $? -eq 0 ]]
+    then 
+      echo " Successfully installed the package"
+    else
+      echo " Unable to install the package"
+    fi
+    
 fi
-
-
 
