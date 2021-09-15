@@ -1,8 +1,17 @@
 #!/bin/bash
+
+if [[ $# -eq 0 ]]
+
+then
+  echo " Usage : $0 pkg1 pkg2 ...."
+  exit 1
+
+fi
+
 if [[ $(id -u) -ne 0 ]]
 then  
    echo " Please run the script with root user or sudo with privilieges" 
-   exit 1
+   exit 2
  fi
 
 
@@ -13,7 +22,7 @@ do
     
         if which $each_pkg  &> /dev/null
         then
-        echo "already vim installed"
+        echo "already $each_pkg installed"
         
         else
         
