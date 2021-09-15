@@ -14,7 +14,6 @@ then
    exit 2
  fi
 
-
 for each_pkg in $@
 
 do
