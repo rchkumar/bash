@@ -6,22 +6,28 @@ then
  fi
 
 
-if which vim  &> /dev/null
-then
-echo "already vim installed"
+for each_pkg in vim httpd nginx
 
-else
+do
 
-
-    echo " Installing VIM"
-    yum install vim -y  &> /dev/null
     
-    if [[ $? -eq 0 ]]
-    then 
-      echo " Successfully installed the package"
-    else
-      echo " Unable to install the package"
-    fi
-    
-fi
+        if which $each_pkg  &> /dev/null
+        then
+        echo "already vim installed"
+        
+        else
+        
+            
+                echo " Installing $each_pkg"
+                yum install $each_pkg -y  &> /dev/null
+                
+                if [[ $? -eq 0 ]]
+                then 
+                  echo " Successfully installed the $each_pkg"
+                else
+                  echo " Unable to install the $each_pkg"
+                fi
+                
+        fi
 
+done
