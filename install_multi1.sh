@@ -15,7 +15,7 @@ then
  fi
 
 
-for each_pkg in vim httpd nginx
+for each_pkg in $@
 
 do
 
