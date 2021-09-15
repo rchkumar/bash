@@ -14,7 +14,7 @@ else
 
 
     echo " Installing VIM"
-    yum install vim -y
+    yum install vim -y  &> /dev/null
     
     if [[ $? -eq 0 ]]
     then 
